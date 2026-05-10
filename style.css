@@ -1,0 +1,124 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --bg: #080808;
+    --card: #121212;
+    --accent: #3b82f6;
+    --border: #262626;
+    --text: #ffffff;
+    --text-dim: #a3a3a3;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.pricing-card {
+    background: var(--card);
+    padding: 40px 30px;
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.pro-card {
+    border-color: var(--accent);
+    padding: 60px 30px; /* Making the center one bigger */
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+    position: relative;
+}
+
+.plan-tag {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.featured {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.price {
+    font-size: 3rem;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-dim);
+}
+
+.desc {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.features li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #d1d1d1;
+}
+
+.plan-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.featured-btn {
+    background: var(--accent);
+    border: none;
+}
+
+.plan-btn:hover {
+    transform: translateY(-5px);
+    background: white;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .pricing-container {
+        grid-template-columns: 1fr;
+    }
+    .pro-card {
+        padding: 40px 30px;
+    }
+}
