@@ -15,6 +15,6 @@ Clean Code: Pure HTML/CSS only.
 
 💰 Get Full Source Code
 Download the production-ready package:
-👉 [WE WILL PASTE GUMROAD LINK HERE LATER]
+👉 [https://bentoarchitect.gumroad.com/l/premium-bento-pricing-table]
 
 Developed by BentoArchitect Studio
